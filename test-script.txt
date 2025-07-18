@@ -1,0 +1,56 @@
+    # Audio Transcription Test Script
+# Read this aloud to test your real AI integration
+
+## Test Script (Speak this into the microphone):
+
+"Good morning everyone. Um, so let's start our meeting today. The weather outside is really nice, isn't it? Anyway, let's get to business.
+
+Our Q4 revenue target is 2.5 million dollars, which is a 15% increase from last quarter. This is really important for our growth strategy. We need to focus on three key action items today.
+
+First action item: Sarah needs to complete the marketing campaign by December 15th. This deadline is non-negotiable because we're launching before the holidays.
+
+Uh, let me just grab some coffee real quick. Sorry about that. Where was I? Oh yes, the second action item.
+
+Second action item: The development team must finish the new feature rollout by January 10th. This will directly impact our user retention metrics.
+
+I think, maybe we should also consider expanding to the European market, but I'm not entirely sure about the regulatory requirements there. That might be something worth exploring.
+
+Third action item: Schedule a follow-up meeting with the investors for next Friday at 2 PM. They're expecting our progress report and financial projections.
+
+Oh, and did anyone see the game last night? It was incredible! The final score was amazing. But anyway, back to business.
+
+The customer satisfaction scores have improved by 12% this month, which shows our quality improvements are working. This data will be crucial for our board presentation.
+
+I really think we're on the right track, though there might be some challenges ahead. The market conditions are somewhat uncertain, and we'll need to adapt our strategy accordingly.
+
+That's all for today's main points. Any questions? Great, let's wrap this up and get back to work."
+
+## What to Expect:
+
+**Important Content** (should be categorized as important):
+- "Q4 revenue target is 2.5 million dollars"
+- "Sarah needs to complete the marketing campaign by December 15th"
+- "Development team must finish the new feature rollout by January 10th"
+- "Schedule a follow-up meeting with the investors for next Friday at 2 PM"
+- "Customer satisfaction scores have improved by 12%"
+
+**Noise Content** (should be categorized as noise):
+- "The weather outside is really nice, isn't it?"
+- "Um, let me just grab some coffee real quick"
+- "Did anyone see the game last night?"
+- "Uh", "Um", casual conversation
+
+**Uncertain Content** (might be categorized as uncertain):
+- "Maybe we should consider expanding to the European market"
+- "I really think we're on the right track, though there might be some challenges"
+- "Market conditions are somewhat uncertain"
+
+## Instructions:
+1. Open http://localhost:3000 in your browser
+2. Click "Start Recording"
+3. Read the script above naturally (don't rush)
+4. Click "Stop Recording"
+5. Wait for processing
+6. Review how the AI categorized your speech!
+
+This will test both Whisper transcription accuracy and LLaMA's content categorization abilities. 

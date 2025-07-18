@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcription & Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Audio Transcription & Analysis</h1>
+            <p class="subtitle">Record, transcribe, and organize your audio content</p>
+        </header>
+
+        <!-- Recording Section -->
+        <div class="recording-section">
+            <button id="startRecording" class="btn btn-primary btn-large">
+                🎤 Start Recording
+            </button>
+            
+            <button id="stopRecording" class="btn btn-danger btn-large hidden">
+                ⏹️ Stop Recording
+            </button>
+
+            <div id="recordingIndicator" class="recording-indicator hidden">
+                <div class="red-dot"></div>
+                <span>Recording...</span>
+            </div>
+
+            <div id="consentMessage" class="consent-message hidden">
+                <p>📢 Recording started. Please ensure everyone consents to being recorded.</p>
+            </div>
+
+            <div id="processingMessage" class="processing-message hidden">
+                <div class="spinner"></div>
+                <p>Processing audio... This may take a moment.</p>
+            </div>
+        </div>
+
+        <!-- Transcript Display Section -->
+        <div id="transcriptSection" class="transcript-section hidden">
+            <h2>Transcription Results</h2>
+            
+            <div class="transcript-group">
+                <h3>✅ Important Content</h3>
+                <div id="importantContent" class="content-list"></div>
+            </div>
+
+            <div class="transcript-group">
+                <h3>🚫 Noise/Unimportant</h3>
+                <div id="noiseContent" class="content-list"></div>
+            </div>
+
+            <div class="transcript-group">
+                <h3>❓ Uncertain - Please Review</h3>
+                <div id="uncertainContent" class="content-list"></div>
+                <p class="help-text">Check the boxes to mark items as Important or Noise</p>
+            </div>
+        </div>
+
+        <!-- Agent Selection & Save Section -->
+        <div id="saveSection" class="save-section hidden">
+            <h3>💾 Save Important Content</h3>
+            <div class="agent-selection">
+                <label for="agentType">Choose output format:</label>
+                <select id="agentType" class="agent-dropdown">
+                    <option value="meeting-notes">📝 Meeting Notes</option>
+                    <option value="personal-reminder">📋 Personal Reminder</option>
+                    <option value="action-items">✅ Action Items</option>
+                    <option value="summary">📄 Summary</option>
+                </select>
+            </div>
+            
+            <button id="saveButton" class="btn btn-success">
+                💾 Save Important Content
+            </button>
+            
+            <div id="saveConfirmation" class="save-confirmation hidden">
+                <p>✅ Content saved successfully!</p>
+                <p id="saveFilename"></p>
+            </div>
+        </div>
+
+        <!-- Reset Section -->
+        <div id="resetSection" class="reset-section hidden">
+            <button id="resetButton" class="btn btn-secondary">
+                🔄 Start New Recording
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
